@@ -1,10 +1,14 @@
 import "./App.css";
+import Box from "@mui/material/Box";
+import Navbar from "./components/Navbar";
+
+import { appStyles } from "./styles/AppStyles";
 
 function App() {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
+    <Box sx={{ ...appStyles }}>
+      <Navbar />
+    </Box>
   );
 }
 
