@@ -1,7 +1,7 @@
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 
 const Menu = () => {
-  return <MenuSharpIcon></MenuSharpIcon>;
+  return <MenuSharpIcon />;
 };
 
 export default Menu;
