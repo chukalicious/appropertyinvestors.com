@@ -3,6 +3,16 @@ import { styled } from "@mui/material/styles";
 export const HeaderBox = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
+  backgroundColor: theme.palette.primary.main,
+  color: theme.palette.primary.contrastText,
+}));
+
+export const StyledBar = styled("div")(({ theme }) => ({
+  border: "green solid 5px",
+  width: "100%",
+  [theme.breakpoints.up("md")]: {
+    border: "pink solid 5px",
+  },
 }));
 
 export const titleBox = {
@@ -17,13 +27,6 @@ export const menuBox = {
   //   border: "yellow solid 2px",
   justifyContent: "flex-end",
 };
-
-export const StyledBar = styled("div")(({ theme }) => ({
-  border: "green solid 5px",
-  [theme.breakpoints.up("md")]: {
-    border: "pink solid 5px",
-  },
-}));
 
 export const buttonWrapper = {
   border: "lightpink solid 1px",
