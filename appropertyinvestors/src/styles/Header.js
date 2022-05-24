@@ -1,7 +1,9 @@
-export const headerStyles = {
+import { styled } from "@mui/material/styles";
+
+export const HeaderBox = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
-};
+}));
 
 export const titleBox = {
   width: "60%",
@@ -15,6 +17,14 @@ export const menuBox = {
   //   border: "yellow solid 2px",
   justifyContent: "flex-end",
 };
-export const barStyles = {
-  //   border: "green solid 5px",
+
+export const StyledBar = styled("div")(({ theme }) => ({
+  border: "green solid 5px",
+  [theme.breakpoints.up("md")]: {
+    border: "pink solid 5px",
+  },
+}));
+
+export const buttonWrapper = {
+  border: "lightpink solid 1px",
 };

@@ -1,21 +1,20 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import AppBar from "@mui/material/AppBar";
 import Menu from "./Menu";
 import Toolbar from "@mui/material/Toolbar";
 import ActionButton from "./ActionButton";
 import {
-  headerStyles,
   titleBox,
   menuBox,
-  barStyles,
   buttonWrapper,
+  HeaderBox,
+  StyledBar,
 } from "../styles/Header";
 
 const Navbar = () => {
   return (
-    <Box sx={{ ...headerStyles }}>
-      <AppBar position="sticky" sx={{ ...barStyles }}>
+    <HeaderBox>
+      <StyledBar position="sticky">
         <Toolbar>
           <Box sx={{ ...titleBox }}>
             <Typography variant="body1" component="h1">
@@ -27,8 +26,8 @@ const Navbar = () => {
           </Box>
           <ActionButton />
         </Toolbar>
-      </AppBar>{" "}
-    </Box>
+      </StyledBar>{" "}
+    </HeaderBox>
   );
 };
 
