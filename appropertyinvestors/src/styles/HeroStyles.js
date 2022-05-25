@@ -2,10 +2,10 @@ import { styled } from "@mui/material/styles";
 
 // This component is a GRID, apply grid-type props
 export const HeroWrapper = styled("div")(({ theme }) => ({
-  // border: "hotpink solid 1px",
+  // border: "hotpink solid 3px",
   height: "auto",
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "column-reverse",
   width: "100%",
 
   // medium screen
@@ -14,15 +14,10 @@ export const HeroWrapper = styled("div")(({ theme }) => ({
   },
 }));
 
-export const heroItemDiv = {
-  p: 3,
-  width: "100%",
-  border: "yellow solid 2px",
-};
-
 export const GridItemWrapper = styled("div")(({ theme }) => ({
   padding: "1.5rem",
   width: "100%",
+  minHeight: "40vh",
   border: "yellow solid 2px",
 }));
 
