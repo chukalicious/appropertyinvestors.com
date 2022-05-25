@@ -21,11 +21,11 @@ export const GridItemWrapper = styled("div")(({ theme }) => ({
   border: "yellow solid 2px",
 }));
 
-// mediaqueries test
+export const HeroH2 = styled("h2")(({ theme }) => ({
+  pt: "1",
+}));
 
-export const someDiv = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
+export const HeroText = styled("p")(({ theme }) => ({
+  marginTop: "6rem",
+  border: "",
 }));
