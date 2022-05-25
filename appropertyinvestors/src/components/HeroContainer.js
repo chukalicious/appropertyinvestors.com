@@ -1,33 +1,37 @@
 import Box from "@mui/material/Box";
-import { heroWrapper, heroBoxItems, heroItemDiv } from "../styles/HeroStyles";
+import { HeroWrapper, GridItemWrapper } from "../styles/HeroStyles";
 
 const HeroContainer = () => {
   return (
-    <Box sx={{ ...heroWrapper }}>
-      <Box sx={{ ...heroBoxItems }}>
-        <Box
+    <Box>
+      <HeroWrapper container spacing={1}>
+        <GridItemWrapper
+          item
+          md={6}
+          xs={12}
           sx={{
-            ...heroItemDiv,
-            backgroundColor: (theme) => theme.palette.primary.main,
-            color: (theme) => theme.palette.primary.contrastText,
+            backgroundColor: "primary.main",
+            color: "primary.contrastText",
           }}
         >
           <p>item 1</p>
           <p>item 1</p>
           <p>item 1</p>
-        </Box>
-        <Box
+        </GridItemWrapper>
+        <GridItemWrapper
+          item
+          md={6}
+          xs={12}
           sx={{
-            ...heroItemDiv,
-            backgroundColor: (theme) => theme.palette.secondary.main,
-            color: (theme) => theme.palette.secondary.contrastText,
+            backgroundColor: "secondary.main",
+            color: "secondary.contrastText",
           }}
         >
           <p>item 2</p>
           <p>item 2</p>
           <p>item 2</p>
-        </Box>
-      </Box>
+        </GridItemWrapper>
+      </HeroWrapper>
     </Box>
   );
 };
