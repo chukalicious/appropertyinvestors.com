@@ -8,11 +8,7 @@ export const HeaderBox = styled("div")(({ theme }) => ({
 }));
 
 export const StyledBar = styled("div")(({ theme }) => ({
-  border: "green solid 5px",
   width: "100%",
-  [theme.breakpoints.up("md")]: {
-    border: "pink solid 5px",
-  },
 }));
 
 export const titleBox = {

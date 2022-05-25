@@ -3,13 +3,7 @@ import Typography from "@mui/material/Typography";
 import Menu from "./Menu";
 import Toolbar from "@mui/material/Toolbar";
 import ActionButton from "./ActionButton";
-import {
-  titleBox,
-  menuBox,
-  buttonWrapper,
-  HeaderBox,
-  StyledBar,
-} from "../styles/Header";
+import { titleBox, menuBox, HeaderBox, StyledBar } from "../styles/Header";
 
 const Navbar = () => {
   return (
