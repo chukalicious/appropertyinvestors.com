@@ -1,5 +1,8 @@
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import ImageListItem from "@mui/material/ImageListItem";
 import { HeroWrapper, GridItemWrapper } from "../styles/HeroStyles";
+import modernMultilevel from "../images/modernMultilevel.jpeg";
 
 const HeroContainer = () => {
   return (
@@ -10,13 +13,16 @@ const HeroContainer = () => {
           md={6}
           xs={12}
           sx={{
-            backgroundColor: "primary.main",
-            color: "primary.contrastText",
+            backgroundColor: "secondary.main",
           }}
         >
-          <p>item 1</p>
-          <p>item 1</p>
-          <p>item 1</p>
+          <Typography variant="h6">
+            We are property investors working to solve central Florida's
+            comminities housing challenges
+          </Typography>
+          <Typography variant="body1">
+            Coming soon to Georgia and North Carolina
+          </Typography>
         </GridItemWrapper>
         <GridItemWrapper
           item
@@ -27,9 +33,9 @@ const HeroContainer = () => {
             color: "secondary.contrastText",
           }}
         >
-          <p>item 2</p>
-          <p>item 2</p>
-          <p>item 2</p>
+          <ImageListItem>
+            <img src={modernMultilevel} />
+          </ImageListItem>
         </GridItemWrapper>
       </HeroWrapper>
     </Box>
