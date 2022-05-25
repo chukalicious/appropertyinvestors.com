@@ -11,18 +11,23 @@ export const StyledBar = styled("div")(({ theme }) => ({
   width: "100%",
 }));
 
-export const titleBox = {
+export const TitleBox = styled("div")(({ theme }) => ({
   width: "60%",
   display: "flex",
-  //   border: "red 1px solid",
-};
+  border: "blue 2px solid",
+  [theme.breakpoints.up("md")]: {
+    width: "40%",
+  },
+}));
 
-export const menuBox = {
+export const MenuBox = styled("div")(({ theme }) => ({
   display: "flex",
   width: "40%",
-  //   border: "yellow solid 2px",
-  justifyContent: "flex-end",
-};
+  border: "yellow solid 2px",
+  [theme.breakpoints.up("md")]: {
+    width: "60%",
+  },
+}));
 
 export const buttonWrapper = {
   border: "lightpink solid 1px",
