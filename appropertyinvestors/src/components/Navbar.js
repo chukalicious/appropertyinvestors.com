@@ -11,7 +11,7 @@ const Navbar = () => {
       <StyledBar position="sticky">
         <Toolbar>
           <TitleBox>
-            <Typography variant="body1" component="h1">
+            <Typography noWrap variant="body1" component="h1">
               A&P Property Investors
             </Typography>{" "}
           </TitleBox>
