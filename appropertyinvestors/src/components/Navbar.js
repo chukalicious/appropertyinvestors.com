@@ -1,23 +1,23 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Menu from "./Menu";
 import Toolbar from "@mui/material/Toolbar";
 import ActionButton from "./ActionButton";
-import { titleBox, menuBox, HeaderBox, StyledBar } from "../styles/Header";
+import NavMenu from "./NavMenu";
+import { HeaderBox, StyledBar, MenuBox, TitleBox } from "../styles/Header";
 
 const Navbar = () => {
   return (
     <HeaderBox>
       <StyledBar position="sticky">
         <Toolbar>
-          <Box sx={{ ...titleBox }}>
+          <TitleBox>
             <Typography variant="body1" component="h1">
               A&P Property Investors
             </Typography>{" "}
-          </Box>
-          <Box sx={{ ...menuBox }}>
-            <Menu />
-          </Box>
+          </TitleBox>
+          <MenuBox>
+            <NavMenu />
+          </MenuBox>
           <ActionButton />
         </Toolbar>
       </StyledBar>{" "}
