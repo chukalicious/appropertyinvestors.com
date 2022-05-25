@@ -12,9 +12,9 @@ import modernMultilevel from "../images/modernMultilevel.jpeg";
 const HeroContainer = () => {
   return (
     <Box>
-      <HeroWrapper container spacing={1}>
+      <HeroWrapper container="true" spacing={1}>
         <GridItemWrapper
-          item
+          item="true"
           md={6}
           xs={12}
           sx={{
@@ -30,7 +30,7 @@ const HeroContainer = () => {
           </HeroText>
         </GridItemWrapper>
         <GridItemWrapper
-          item
+          item="true"
           md={6}
           xs={12}
           sx={{
